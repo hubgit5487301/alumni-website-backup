@@ -1,0 +1,363 @@
+.top-box {
+  display: flex;
+  border-radius: 0.4vw;
+  height: 4vw;
+  justify-content: space-between;
+  background-color:  rgba(46, 45, 45, 0.3);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  transition: 0.15s;
+  padding-bottom: 0.5vw;
+  position: fixed;
+  z-index: 100;
+  left: 1vw;
+  right: 1vw;
+  top: 0.3vw;
+  backdrop-filter: blur(8px);
+}
+
+.left-content {
+  display: flex;
+  background-color: rgba(46, 45, 45, 0.300);
+  border-radius: 10px;
+  align-self: center;
+  margin-left: 1.5vw;
+  padding: 0vw;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+}
+
+.left-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(46, 45, 45, 0.87);
+}
+
+.left-content:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.home-link{
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.dashlink,.serviceslink,.eventlink,.alumnilink,.contactlink,.joblink,.userlink,.logoutlink {
+  text-decoration: none;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.dashlink .tooltip{
+  position: absolute;
+  left: -1.25vw;
+  bottom: -3vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.dashlink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.serviceslink .tooltip{
+  position: absolute;
+  bottom: -3vw;
+  left: -0.75vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.serviceslink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.alumnilink .tooltip{
+  position: absolute;
+  left: -2.75vw;
+  bottom: -3vw;
+  width: 7.5vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.alumnilink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.eventlink .tooltip{
+  position: absolute;
+  left: -2.25vw;
+  width: 6.7vw;
+  bottom: -3vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.eventlink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.joblink .tooltip{
+  position: absolute;
+  left: -2.5vw;
+  bottom: -3vw;
+  width: 7vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.joblink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.contactlink .tooltip{
+  position: absolute;
+  left: -1.5vw;
+  bottom: -3vw;
+  width: 5vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.contactlink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.userlink .tooltip{
+  position: absolute;
+  left: -0.2vw;
+  bottom: -3vw;
+  background-color: rgba(46, 45, 45, 0.774);
+  padding: 0.5vw;
+  border-radius: 8px;
+  opacity: 0;
+  font-size: 0.9vw;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  text-align: center;
+}
+
+.userlink:hover .tooltip{
+  opacity: 0.8;
+}
+
+.home-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 5vw;
+  font-size: 1.3vw;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 1;
+  align-items: center;
+  gap: 0.5vw;
+  padding: 0.5vw 1vw;
+}
+
+.logo-icon {
+  height: 2vw;
+  background-color: transparent;
+  
+}
+
+.home-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.middle-content {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -7.5vw;
+  gap: 2vw;
+}
+
+.home-icon,.services-icon,.friends-icon,.events-icon,.contact-us-icon,.job-icon {
+  height: 2vw;
+  background-color: rgba(46, 45, 45, 0.603);
+  padding: 0.5vw;
+  border-radius: 10px;
+  align-self: center;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.664);
+}
+
+.home-icon:hover,.services-icon:hover,.friends-icon:hover,.events-icon:hover,.contact-us-icon:hover,.job-icon:hover,.profile-icon:hover,.social-icon:hover {
+  transform: scale(1.14);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(46, 45, 45, 0.87);
+}
+
+.home-icon:active,.services-icon:active,.friends-icon:active,.events-icon:active,.contact-us-icon:active,.job-icon:active,.profile-icon:active,.social-icon:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.right-content {
+  display: flex;
+  background-color: transparent;
+  border-radius: 10px;
+  align-self: center;
+  margin-right: 1.5vw;
+  padding: 0vw;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: none;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  background-color:  rgba(0, 0, 0, 0.356);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  padding: 1.5vw;
+  margin-bottom: 1vw;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+
+.footer-right-content {
+  text-align: end;
+}
+
+.footer-left-content p {
+  margin: 0%;
+  font-size: 1.5vw;
+}
+
+.footer p {
+  margin: 0%;
+  background-color: transparent;
+  font-size: 1.5vw;
+}
+
+.footer-policy {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+}
+
+.social-links {
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+  gap: 3vw;
+}
+
+.social-icon{
+  padding: 0%;
+  background-color: transparent;
+  height: 3vw;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+
+.social-icon:hover {
+  transform: scale(1.14);
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.social-icon:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+
+.logout-button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(21, 101, 221);
+  color: white;
+  font-weight: bold;
+  padding: 0.5vw;
+  font-size:1.2vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.10s;
+  align-self: center;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.logout-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+
+.profile-icon {
+  height: 3vw;
+  width: 3vw;
+  object-fit: cover;
+  background-color: rgba(46, 45, 45, 0.603);
+  border-radius: 100%;
+  align-self: center;
+  transition: 0.15s;
+  cursor: pointer;
+  border: solid;
+  border-color: rgb(255, 255, 255);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.664);
+}
+
+

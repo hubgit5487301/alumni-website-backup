@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Upload Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/protected-styles/dashboardgeneral.css">
+    <link rel="stylesheet" href="/protected/resources/styles/upload_resources.css">
+    <link rel="stylesheet" href="/protected-styles/nav-bar.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="top-box js-top-box"></div>
+    <div class="bottom-box">
+      <h1 class="top-heading">Upload Resources</h1>
+        <div class="notes-form js-notes-form">
+          <div class="inner-notes-form">
+            <label>Name</label>
+            <input type="text" class="input-default js-file-name" placeholder="Name">
+            <label>Tags</label>
+            <input type="text" class="input-default js-search-tags" placeholder="Tags">
+            <label>Branch</label>
+            <select class="input-default js-branch">
+              <option value="" selected hidden disabled>Select Branch</option>
+              <option value="CSE">Comp Sc. Engineering</option>
+              <option value="ME">Mechanical Engineering</option>
+              <option value="EE">Electrical Engineering</option>
+              <option value="CE">Civil Engineering</option>
+              <option value="ECE">Electrical Comm. Engineering</option>
+            </select> 
+            <label>Type</label>
+            <select class="input-default js-file-type">
+              <option value="" selected hidden disabled>Select Type</option>
+              <option value="Notes">Notes</option>
+              <option value="qpapers">Ques. Papers</option>
+            </select>
+            <label>Semester</label>
+            <select class="input-default js-sem">
+              <option value="" selected hidden disabled>Select Semester</option>
+              <option value="1">1st Sem</option>
+              <option value="2">2nd Sem</option>
+              <option value="3">3rd Sem</option>
+              <option value="4">4th Sem</option>
+              <option value="5">5th Sem</option>
+              <option value="6">6th Sem</option>
+              <option value="7">7th Sem</option>
+              <option value="8">8th Sem</option>
+            </select> 
+            <label>Subject</label>
+            <select class="input-default js-subject">
+              <option value="" selected hidden disabled>Select Subject</option>
+              <option value="DSA">DSA</option>
+              <option value="DAA">DAA</option>
+              <option value="Java">JAVA</option>
+              <option value="AI">A.I</option>
+              <option value="FEE">F.E.E</option>
+              <option value="ACA">A.C.A</option>
+              <option value="CD">CD</option>
+              <option value="WT">WT</option>
+            </select>
+            <label>File</label>
+            <input type="file" accept=".pdf" class="file-input js-file-input">
+          </div>
+        <button class="submit-button js-submit-button">Upload</button>
+        </div>
+    </div>
+    <footer class="bottom js-bottom"></footer>
+    <script type="module" src="/protected-scripts/nav-bar-protected.js"></script>
+    <script type="module" src="/protected/resources/scripts/upload_resources.js"></script>
+  </body>
+</html>

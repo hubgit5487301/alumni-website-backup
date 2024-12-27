@@ -1,0 +1,36 @@
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5vw;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 3.5vw;
+}
+
+.post-job,.register-event,.gallery  {
+  display: flex;
+  background-color:  rgba(46, 45, 45, 0.596);
+  box-shadow: 0px 18px 16px 0px rgba(20, 20, 20, 0.486);
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  border-radius: 10px;
+  transition: 0.15s;
+  height: 10vw;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.post-job:hover,.register-event:hover,.gallery:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+  background-color: rgba(61, 61, 61, 0.651);
+  cursor: pointer;
+}
+
+.post-job:active,.register-event:active,.gallery:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Alumni Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/protected/users/styles/alumni-directory.css">
+    <link rel="stylesheet" href="/protected-styles/nav-bar.css">
+    <link rel="stylesheet" href="/protected-styles/dashboardgeneral.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="top-box js-top-box"></div>
+    <div class="bottom-box">
+      <div class="page-heading"><head class="page-heading">ALumni Directory</head></div>
+      <div class="search-box js-search-box">
+        <div class="search-bar js-search-bar">
+          <input class="search-input js-search-input" placeholder="Search">
+          <select class="search-input js-search-input-year" placeholder="Search">
+            <option value="">Select Batch (admission year)</option>
+            </select>
+          <select class="search-input js-search-input-branch" placeholder="Search">
+            <option value="" >Select Branch</option>
+            <option  value="CSE">Computer Science Engineering</option>
+            <option  value="ME">Mechanical Engineering</option>
+            <option  value="CE">Civil Engineering</option>
+            <option  value="EE">Electrical Engineering</option>
+            <option  value="ECE">Electrical communication Engineering</option>
+          </select>
+          <button class="search-button js-search-button">
+            <img class="search-icon" src="/images/search-icon.svg" loading="lazy">
+          </button>
+        </div>
+        <div class="search-output js-search-output">
+        </div>
+      </div>
+      <div class="all-alumni">
+        <div class="person-row js-person-row"></div>
+      </div>
+    </div>
+    <footer class="bottom js-bottom"></footer>
+    <script type="module" src="/protected-scripts/nav-bar-protected.js"></script>
+    <script type="module" src="/protected/users/scripts/alumni-directory.js"></script>
+  </body>
+</html>

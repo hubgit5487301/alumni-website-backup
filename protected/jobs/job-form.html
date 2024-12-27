@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Alumni Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/protected/jobs/styles/job-form.css">
+    <link rel="stylesheet" href="/protected-styles/nav-bar.css">
+    <link rel="stylesheet" href="/protected-styles/dashboardgeneral.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="top-box js-top-box"></div>
+    <div class="bottom-box">
+      <h1 class="job-heading">Job Form</h1>
+      <div class="job-form-box js-job-form-box">
+        <div class="job-form js-job-form">
+          <div class="job-details-box js-job-details-box">
+            <h1>Job Details</h1>
+            <form class="job-details js-job-details">
+              <label for="job-tittle">Job Tittle</label>
+              <input class="input-default js-job-tittle" type="text" placeholder="Job Tittle">
+              <label for="job-location">Job Location</label>
+              <input class="input-default js-job-location" type="text" placeholder="Job location">
+              <label for="job-salary">Job Salary (monthly)</label>
+              <input class="input-default js-job-salary" type="number" min="5000" placeholder="Job Salary (monthly)">
+              <label for="job-type">Job Type</label>
+              <select class="input-default js-job-type" name="job-type">
+                <option value="" disabled selected hidden>Select Job Type</option>
+                <option value="Full Time">Full-Time</option>
+                <option value="Part Time">Part-Time</option>
+                <option value="Internship">Internship</option>
+                <option value="Contract">Contract</option>
+              </select>
+              <label for="job-level">Employement Level</label>
+              <select class="input-default js-job-level" name="job level">
+                <option value="" disabled selected hidden>Select level</option>
+                <option value="Entry level">Entry Level</option>
+                <option value="Mid level">Mid Level</option>
+                <option value="Senior level">Senior Level</option>
+                <option value="Manager">Manager</option>
+              </select>
+              <label for="job-des">Job Description</label>
+              <textarea class="input-default js-job-des" type="text" placeholder="Job Description"></textarea>
+            </form>
+          </div>
+          <div class="job-quali-box js-job-quali-box">
+            <h1>Required Qualifications</h1>
+            <form class="job-quali js-job-quali">
+              <label for="edu-qual">Educational Requirement</label>
+              <input class="input-default js-edu-qual" type="text" placeholder="Educational Requirement">
+              <label for="exp-level">Experience Level (in years)</label>
+              <input class="input-default js-exp-level" type="text" placeholder="Experience Level(in years)">
+            </form>
+          </div>
+          <div class="job-appli-box js-job-appli-box">
+            <h1>Application Details</h1>
+            <form class="job-appli js-job-appli">
+              <label for="deadline">Application Deadline</label>
+              <input class="input-default js-deadline" type="date">
+              <label for="Application-email">Application Email</label>
+              <input class="input-default js-app-email" type="email" placeholder="Email">
+              <label for="resume">Resume Required</label>
+              <select class="input-default js-resume" name="resume">
+                <option value="" disabled selected hidden>Yes/No</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </form>
+          </div>
+          <div class="company-details-box js-company-details-box">
+            <h1>Company details</h1>
+            <form class="company-details js-company-details">
+              <label for="company-name">Company Name</label>
+              <input class="input-default js-company-name" type="text" placeholder="Company Name">
+              <label for="company-des">Company Description</label>
+              <textarea class="input-default js-company-des" placeholder="Company Description"></textarea>
+              <label class="company-website">Company Website</label>
+              <input class="input-default js-company-website" placeholder="Company Website" type="url">
+              <label for="contact-info">Contact Information</label>
+              <input class="input-default js-contact-info" placeholder="Contact Information" type="text">
+              <label for="company-logo">Company Logo</label>
+              <input class="job-file js-company-logo" type="file" accept=".jpg, .png">
+            </form>
+          </div>
+          <button class="submit-button js-submit-button">Submit</button>
+        </div>
+      </div>
+    </div>
+    <footer class="bottom js-bottom"></footer>
+    <script type="module" src="/protected-scripts/nav-bar-protected.js"></script>
+    <script type="module" src="/protected/jobs/scripts/job-form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.job-heading {
+  align-self: center;
+  background-color: rgba(46, 45, 45, 0.604);
+  box-shadow: rgba(20, 20, 20, 0.663) 0px 18px 16px 0px;
+  padding: 1vw 2vw;
+  border-radius: 8px;
+  margin: 0%;
+}
+
+
+.job-form {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
+  align-items: center;
+  padding: 0%;
+  margin: 0;
+  padding-inline: 5vw;
+}
+
+.job-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1vw;
+}
+
+.job-quali {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1vw;
+}
+
+.job-appli {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1vw;
+}
+
+.company-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1vw;
+}
+
+.submit-button {
+  border: none;
+  color: white;
+  font-size: 1vw;
+  padding: 0.4vw;
+  padding-inline: 5vw;
+  border-radius: 5px;  
+  background-color: rgb(21, 101, 221);
+  font-weight: bold;
+  font-size:1.5vw ;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.15s;
+  cursor: pointer;
+}
+.submit-button:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.submit-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.job-file {
+  border-radius: 8px;
+  padding: 0.5vw 0.8vw;
+}
+
+.job-file::-webkit-file-upload-button {
+  color: white;
+  background-color: rgb(21, 101, 221);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+  transition: 0.15s;
+  font-size: 1.1vw;
+}
+
+.job-file::-webkit-file-upload-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.job-file::-webkit-file-upload-button:active {
+  transform: scale(1);
+  opacity: 0.8;
+  box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
