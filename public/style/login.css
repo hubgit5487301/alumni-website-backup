@@ -1,0 +1,128 @@
+.left-box {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
+}
+
+.login-form {
+    display: grid;
+    align-items: center;
+}
+
+.left-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.username-box,.password-box {
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(59, 59, 59);
+    padding: 0.5vw;
+}
+
+.username-box {
+    text-transform: uppercase;
+}
+
+.username-box::placeholder {
+    text-transform: none;
+}
+
+.header {
+    background-color: rgb(59, 59, 59,0.663);
+    border-radius: 8px;
+    padding: 0.5vw;
+    box-shadow: 0px 9px 20px 0px rgba(20, 20, 20);
+}
+
+.text1 {
+    font-size: 1.4vw;
+}
+
+.text3,.text2 {
+    font-size: 1vw;
+}
+
+.username-box::placeholder,.password-box::placeholder {
+    opacity: 0.5;
+}
+
+.forgot-password-button {
+    margin-top: 0.3vw;
+    border-radius: 4px;
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 0%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgot-password-button:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    margin-top: 1vw;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(21, 101, 221);
+    color: white;
+    font-weight: bold;
+    padding: 0.3vw 1vw;
+    font-size: 1.2vw ;
+    box-shadow: 0px 9px 20px 0px rgb(20, 20, 20);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 16px 20px 0px rgb(20, 20, 20);
+}
+
+.login-button:active {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0px 7px 20px 0px rgb(20, 20, 20);
+}
+
+.register-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+}
+
+.text4 {
+    font-size: 1vw;
+}
+
+.register-button {
+    padding: 0;
+    margin: 0;
+    max-width: 4.5vw;
+    background-color: transparent;
+    border: none;
+    font-size:1vw ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    text-decoration: underline;
+}

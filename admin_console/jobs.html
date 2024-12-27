@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Alumni Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, job-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/admin_console/styles/jobs.css">
+    <link rel="stylesheet" href="/admin_console/styles/dashboardgeneral.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="bottom-box">
+      <div class="menu js-menu"></div>
+      <div class="admin-page">
+        <div class="upper-div">
+          <div class="header-admin">Manage jobs</div>
+          <a class="logout-button js-logout-button" href="/logout">Logout</a>
+        </div>
+        <div class="lower-div">
+          <div class="jobs-div">
+            <div class="search-jobs js-search-jobs">
+              <label>Job name</label>
+              <input class="input-default js-search-jobname" type="text" placeholder="jobname">
+              <label>Company name</label> 
+              <input class="input-default js-search-company" type="text" placeholder="Company name">
+              <div class="search-button js-search-button">Search</div>
+            </div>
+            <div class="job-data">
+              <div class="list-search-jobs js-list-search-jobs"></div>
+              <div class="list-jobs js-list-jobs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/scripts/nav.js"></script>
+    <script type="module" src="/admin_console/scripts/jobs.js"></script>
+  </body>
+</html>

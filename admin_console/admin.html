@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Admin Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/admin_console/styles/admin.css">
+    <link rel="stylesheet" href="/admin_console/styles/dashboardgeneral.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="bottom-box">
+      <div class="menu js-menu"></div>
+      <div class="admin-page">
+        <div class="upper-div">
+          <div class="header-admin js-welcome-admin-text"></div>
+          <a class="logout-button js-logout-button" href="/logout">Logout</a>
+        </div>
+        <div class="lower-div">
+          <div class="stats-div">
+            <div class="stats js-users-stats"></div>
+            <div class="stats js-active-users-stats"></div>
+            <div class="stats js-events-stats"></div>
+            <div class="stats js-today-events-stats"></div>
+            <div class="stats js-jobs-stats"></div>
+            <div class="stats js-today-job-stats"></div>
+          </div>
+          <div class="today-stats">
+            <div class="stat-info">
+              <div class="heading">All Admins</div>
+              <div class="stat-box js-admin-info"></div>
+            </div>
+            <div class="stat-info">
+              <div class="heading">Today's Registered Users</div>
+              <div class="stat-box js-regis-users"></div>
+            </div>
+            <div class="stat-info">
+              <div class="heading">Today's Registered Events</div>
+              <div class="stat-box js-regis-events"></div>
+            </div>
+            <div class="stat-info">
+              <div class="heading">Today's Registered Jobs</div>
+              <div class="stat-box js-regis-jobs"></div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/scripts/nav.js"></script>
+    <script type="module" src="/scripts/admin.js"></script>
+  </body>
+</html>

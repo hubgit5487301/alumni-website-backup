@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Alumni Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/admin_console/styles/users.css">
+    <link rel="stylesheet" href="/admin_console/styles/dashboardgeneral.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="bottom-box">
+      <div class="menu js-menu"></div>
+      <div class="admin-page">
+        <div class="upper-div">
+          <div class="header-admin">Manage Users</div>
+          <a class="logout-button js-logout-button" href="/logout">Logout</a>
+        </div>
+        <div class="lower-div">
+          <div class="users-div">
+            <div class="search-users js-search-users">
+              <label>Username</label>
+              <input class="input-default js-search-username" type="text" placeholder="Username">
+              <label>Userid</label> 
+              <input class="input-default js-search-userid" type="text" placeholder="Userid" style="text-transform: uppercase;">
+              <div class="search-button js-search-button">Search</div>
+            </div>
+            <div class="user-data">
+              <div class="list-users js-list-users"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/scripts/nav.js"></script>
+    <script type="module" src="/admin_console/scripts/users.js"></script>
+  </body>
+</html>

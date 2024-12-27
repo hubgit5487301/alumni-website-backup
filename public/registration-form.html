@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./style/dashboardgeneral.css">
+    <link rel="stylesheet" href="./style/nav-bar.css">
+    <link rel="stylesheet" href="./style/registration-form.css">
+  </head>
+  <body class="general-dashboard">
+    <div class="top-box js-top-box"></div>
+    <div class="bottom-box">
+      <div class="top-text">Register</div>
+      <div class="input-form">
+        <form class="profile-input js-profile-input">
+          <label for="name">Name<text class="star">*</text></label>
+          <input class="input-default js-name" type="text" placeholder="Your name">
+          <label for="roll-no">College Roll No (eg:for 2021 computer science 05 = 21CSE05 )<text class="star">*</text></label>
+          <input class="input-default js-userid" type="text" placeholder="Roll no (will be used as your user-id)">
+          
+          <select class="input js-user-type" name="user type">
+            <option value="" selected disabled hidden>User type</option>
+            <option value="alumni">Alumni</option>
+            <option value="student">Student</option>
+          </select>
+
+          <select class="input js-batch" name="year">
+            <option value="" disabled selected hidden>Select your batch admission year</option>
+          </select>
+          <label for="Email">Email<text class="star">*</text></label>
+          <input class="input-default js-email" autocomplete="email" type="email" placeholder="Your email">
+          <!--<label for="privacy">Set User privacy<text class="star">*</text></label>
+          <select class="input-default js-privacy">
+            <option value="" selected disabled hidden>Select your privacy option</option>
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+          </select>-->
+          <label for="Password">Password<text class="star">*</text></label>
+          <input class="input-default js-password" maxlength="16" minlength="8" autocomplete="new-password" type="password" placeholder="Your password">
+          <label for="Password">Re-Enter Password<text class="star">*</text></label>
+          <input class="input-default js-password-recheck" maxlength="16" minlength="8" autocomplete="new-password" type="password" placeholder="Enter your password again">
+        </form>
+        <button class="submit-button js-submit-button">Submit</button>
+      </div>
+    </div>
+    <footer class="bottom js-bottom"></footer>
+    <script type="module" src="./script/nav-bar.js"></script>
+    <script type="module" src="./script/registration-form.js"></script>
+  </body>
+</html>
